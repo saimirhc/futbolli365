@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOLLI365 - Live Football Streaming</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px;
+            background-color: #343a40;
+            color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .stream-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .stream-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .stream-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #343a40;
+        }
+
+        .play-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: bold;
+        }
+
+        .play-button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        .iframe-container {
+            display: none;
+            margin-top: 20px;
+            border: 2px solid #28a745;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .ad-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .stream-title {
+                font-size: 20px;
+            }
+
+            .play-button {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FUTBOLLI365 - Watch Live Football Matches</h1>
+
+    <div class="container">
+        <div class="ad-container">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1248625150772523"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="fluid"
+                 data-ad-layout-key="-fb+5w+4e-db+86"
+                 data-ad-client="ca-pub-1248625150772523"
+                 data-ad-slot="1349116040"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- First Game -->
+        <div class="stream-box">
+            <div class="stream-title">Al Akhdoud VS Al Orubah</div>
+            <button class="play-button" onclick="showStream('streamContainer1')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer1">
+                <iframe src='https://koora.vip/share.php?ch=extra2_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+
+        <!-- Second Game -->
+        <div class="stream-box">
+            <div class="stream-title">Al-Shabab VS Al-Wehda</div>
+            <button class="play-button" onclick="showStream('streamContainer2')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer2">
+                <iframe src='https://koora.vip/share.php?ch=extra1_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+
+        <!-- Third Game -->
+        <div class="stream-box">
+            <div class="stream-title">Genoa VS Fiorentina 18:30</div>
+            <button class="play-button" onclick="showStream('streamContainer3')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer3">
+                <iframe src='https://koora.vip/share.php?ch=ad1_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+
+        <!-- Fourth Game -->
+        <div class="stream-box">
+            <div class="stream-title">Al-Ittihad VS Al-Ahli Saudi 19:00</div>
+            <button class="play-button" onclick="showStream('streamContainer4')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer4">
+                <iframe src='https://koora.vip/share.php?ch=ssc1_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showStream(containerId) {
+            var containers = document.querySelectorAll('.iframe-container');
+            containers.forEach(function(container) {
+                container.style.display = 'none';
+            });
+            document.getElementById(containerId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

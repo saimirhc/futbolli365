@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOLLI365 - Live Football Streaming</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px;
+            background-color: #343a40;
+            color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 800px; /* Limit container width */
+            margin: auto; /* Center the container */
+        }
+
+        .stream-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: transform 0.2s; /* Add transition for hover effect */
+        }
+
+        .stream-box:hover {
+            transform: translateY(-5px); /* Hover effect */
+        }
+
+        .stream-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #343a40;
+        }
+
+        .play-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for hover effect */
+            font-weight: bold;
+        }
+
+        .play-button:hover {
+            background-color: #218838;
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .iframe-container {
+            display: none;
+            margin-top: 20px;
+            border: 2px solid #28a745; /* Add a border to the iframe container */
+            border-radius: 10px;
+            overflow: hidden; /* Clip overflow */
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Ad placement styles */
+        .ad-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e9ecef; /* Light background for ads */
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .stream-title {
+                font-size: 20px;
+            }
+
+            .play-button {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <link rel="me" href="https://www.blogger.com/profile/11800498542349168574" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+    <meta name='google-adsense-platform-domain' content='blogspot.com'/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1248625150772523&host=ca-host-pub-1556223355139109" crossorigin="anonymous"></script>
+    <style type="text/css">@import url(//www.blogger.com/static/v1/v-css/navbar/3334278262-classic.css);
+    div.b-mobile {display:none;}</style>
+</head>
+<body>
+    <script type="text/javascript">
+        function setAttributeOnload(object, attribute, val) {
+            if(window.addEventListener) {
+                window.addEventListener('load', function(){ object[attribute] = val; }, false);
+            } else {
+                window.attachEvent('onload', function(){ object[attribute] = val; });
+            }
+        }
+    </script>
+    <div id="navbar-iframe-container"></div>
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+    <script type="text/javascript">
+        gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+            if (gapi.iframes && gapi.iframes.getContext) {
+                gapi.iframes.getContext().openChild({
+                    url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d4114820244685858503\x26blogName\x3dfutbolli365\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dBLUE\x26layoutType\x3dCLASSIC\x26searchRoot\x3dhttps://futbolli365.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://futbolli365.blogspot.com/\x26vt\x3d2134533204833291539',
+                    where: document.getElementById("navbar-iframe-container"),
+                    id: "navbar-iframe"
+                });
+            }
+        });
+    </script>
+
+    <h1>FUTBOLLI365 - Watch Live Football Matches</h1>
+
+    <div class="container">
+    <!-- Ad placement -->
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1248625150772523"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-fb+5w+4e-db+86"
+             data-ad-client="ca-pub-1248625150772523"
+             data-ad-slot="1349116040"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+        <!-- First Game -->
+        <div class="stream-box">
+            <div class="stream-title">Al Akhdoud VS Al Orubah</div>
+            <button class="play-button" onclick="showStream('streamContainer1')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer1">
+                <iframe src='https://koora.vip/share.php?ch=extra2_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+
+        <!-- Second Game -->
+        <div class="stream-box">
+            <div class="stream-title">Al-Shabab VS Al-Wehda</div>
+            <button class="play-button" onclick="showStream('streamContainer2')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer2">
+                <iframe src='https://koora.vip/share.php?ch=extra1_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+
+        <!-- Third Game -->
+        <div class="stream-box">
+            <div class="stream-title">Genoa VS Fiorentina 18:30</div>
+            <button class="play-button" onclick="showStream('streamContainer3')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer3">
+                <iframe src='https://koora.vip/share.php?ch=ad1_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+
+        <!-- Fourth Game -->
+        <div class="stream-box">
+            <div class="stream-title">Al-Ittihad VS Al-Ahli Saudi 19:00</div>
+            <button class="play-button" onclick="showStream('streamContainer4')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer4">
+                <iframe src='https://koora.vip/share.php?ch=ssc1_1' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+
+        <!-- Uncomment to add more games -->
+        <!-- 
+        <div class="stream-box">
+            <div class="stream-title">Match 5 Title</div>
+            <button class="play-button" onclick="showStream('streamContainer5')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer5">
+                <iframe src='YOUR_IFRAME_SOURCE' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+        
+        <div class="stream-box">
+            <div class="stream-title">Match 6 Title</div>
+            <button class="play-button" onclick="showStream('streamContainer6')">Watch Live</button>
+            <div class="iframe-container" id="streamContainer6">
+                <iframe src='YOUR_IFRAME_SOURCE' allowfullscreen='true' frameborder='0' height='500px' scrolling='1' width='100%'></iframe>
+            </div>
+        </div>
+        -->
+
+    </div>
+
+    <script>
+        function showStream(containerId) {
+            var containers = document.querySelectorAll('.iframe-container');
+            containers.forEach(function(container) {
+                container.style.display = 'none'; // Hide all stream containers
+            });
+            document.getElementById(containerId).style.display = 'block'; // Show the selected stream container
+        }
+    </script>
+</body>
+</html>
+
